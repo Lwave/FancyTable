@@ -1,0 +1,49 @@
+<html ng-app="FancyTable">
+<head>
+    <title>FancyTable</title>
+    <link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="~/css/site.css" rel="stylesheet" />
+    <base href="/" />
+</head>
+<body >
+    <div class="container">
+        <header id="ll-header" class="row-fluid">
+            <div class="span">
+                <div id="logo">
+                    <a href="/" alt="homepage">
+                        <img src="../../images/timeoutcoffee.jpg" alt="timeout" />
+                    </a>
+                </div>
+           <h4 class="site-description"> Serving good coffee. Always.</h4> 
+            </div>
+        </header>
+        <ul>
+            <li><a ui-sref="home">Home</a></li>
+            <li><a ui-sref="location">Location</a></li>
+            <li><a ui-sref="menu">Menu</a></li>
+            <li><a ui-sref="contact">Contact</a></li>
+            <li><a ui-sref="about">About</a></li>
+        </ul>
+      
+        <hr />
+
+        <ui-view></ui-view>
+    </div>
+
+    <!-- Library Files -->
+    <script src="/bower_components/angular/angular.js"></script>
+    <script src="/bower_components/angular-resource/angular-resource.js"></script>
+    <script src="/bower_components/angular-animate/angular-animate.js"></script>
+    <script src="/bower_components/angular-touch/angular-touch.js"></script>
+    <script src="/bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+
+    <!-- App Files-->
+    <script src="/ngapp/app.js"></script>
+    <script src="/ngapp/controllers/controllers.js"></script>
+    <script src="/ngapp/services/services.js"></script>
+
+
+</body>
+</html>
